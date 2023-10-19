@@ -1,5 +1,7 @@
 build/
 mactest.app/
+.mactest.app/
 .DS_Store
 bin/
 data/
+gtk-mac-bundler/

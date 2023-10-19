@@ -19,26 +19,14 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#include "config.h"
-
-#include <glib/gi18n.h>
-
 #include "mactest-application.h"
 
 int
-main (int   argc,
-      char *argv[])
+main (int   argc, char *argv[])
 {
-	g_autoptr(MactestApplication) app = NULL;
-	int ret;
-
-	bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
-	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-	textdomain (GETTEXT_PACKAGE);
-
-	app = mactest_application_new ("com.github.xournalpp.mactest", G_APPLICATION_HANDLES_OPEN);
+	g_autoptr(MactestApplication) app = mactest_application_new ("com.github.xournalpp.mactest", G_APPLICATION_HANDLES_OPEN);
 	g_object_set(G_OBJECT(app), "register-session", true, (char*)0);	
-	ret = g_application_run (G_APPLICATION (app), argc, argv);
+	int ret = g_application_run (G_APPLICATION (app), argc, argv);
 
 	return ret;
 }
