@@ -9,9 +9,9 @@
     <key>CFBundleGetInfoString</key>
     <string>0.3, Copyright 2023 Roland Lötscher</string>
     <key>CFBundleIconFile</key>
-    <string>mactest.icns</string>
+    <string>com.github.rolandlo.mactest.icns</string>
     <key>CFBundleIdentifier</key>
-    <string>com.github.xournalpp.mactest</string>
+    <string>com.github.rolandlo.mactest</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundlePackageType</key>
@@ -47,7 +47,7 @@
           <string>zgw</string>
         </array>
         <key>CFBundleTypeIconFile</key>
-	        <string>com.github.xournalpp.mactest.icns</string>
+	        <string>com.github.rolandlo.mactest.icns</string>
         <key>CFBundleTypeName</key>
         <string>MacTest zgw Document</string>
         <key>CFBundleTypeMIMETypes</key>

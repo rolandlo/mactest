@@ -24,7 +24,7 @@
 int
 main (int   argc, char *argv[])
 {
-	g_autoptr(MactestApplication) app = mactest_application_new ("com.github.xournalpp.mactest", G_APPLICATION_HANDLES_OPEN);
+	g_autoptr(MactestApplication) app = mactest_application_new ("com.github.rolandlo.mactest", G_APPLICATION_HANDLES_OPEN);
 	g_object_set(G_OBJECT(app), "register-session", true, (char*)0);	
 	int ret = g_application_run (G_APPLICATION (app), argc, argv);
 
