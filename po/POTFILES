@@ -1,0 +1,6 @@
+data/com.github.xournalpp.mactest.desktop.in
+data/com.github.xournalpp.mactest.metainfo.xml.in
+data/com.github.xournalpp.mactest.gschema.xml
+src/main.c
+src/mactest-window.c
+src/mactest-window.ui

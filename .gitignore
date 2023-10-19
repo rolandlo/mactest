@@ -1,0 +1,5 @@
+build/
+mactest.app/
+.DS_Store
+bin/
+data/

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>English</string>
+    <key>CFBundleExecutable</key>
+    <string>mactest</string>
+    <key>CFBundleGetInfoString</key>
+    <string>0.3, Copyright 2023 RL</string>
+    <key>CFBundleIconFile</key>
+    <string>mactest.icns</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.github.xournalpp.mactest</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.3</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleVersion</key>
+    <string>0.3</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright 2023 RL, GNU General Public License.</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>10.15</string>
+
+
+    <key>NSDesktopFolderUsageDescription</key>
+    <string>Required to enable the internal file chooser to choose files from the desktop folder.</string>
+    <key>NSDocumentsFolderUsageDescription</key>
+    <string>Required to enable the internal file chooser to choose files from the documents folder.</string>
+    <key>NSDownloadsFolderUsageDescription</key>
+    <string>Required to enable the internal file chooser to choose files from the downloads folder.</string>
+    <key>NSNetworkVolumesUsageDescription</key>
+    <string>Required to enable the internal file chooser to choose files from network volumes.</string>
+    <key>NSRemovableVolumesUsageDescription</key>
+    <string>Required to enable the internal file chooser to choose files from removable devices.</string>
+
+    <key>CFBundleDocumentTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleTypeExtensions</key>
+        <array>
+          <string>zgw</string>
+        </array>
+        <key>CFBundleTypeIconFile</key>
+	        <string>com.github.xournalpp.mactest.icns</string>
+        <key>CFBundleTypeName</key>
+        <string>MacTest zgw Document</string>
+        <key>CFBundleTypeMIMETypes</key>
+        <array>
+          <string>application/x-zgw</string>
+        </array>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+      </dict>
+    </array>
+</dict>
+</plist>
+
