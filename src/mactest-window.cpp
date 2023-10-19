@@ -51,10 +51,6 @@ MactestWindow *mactest_window_new (MactestApplication *app)
     return MACTEST_WINDOW(g_object_new (MACTEST_TYPE_WINDOW, "application", app, (char*)0));
 }
 
-void mactest_window_open (MactestWindow *win, GFile *file)
-{
-}
-
 void mactest_window_set_text(MactestWindow *win, const char *text) {
     gtk_label_set_text(win->label, text);
 }

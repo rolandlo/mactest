@@ -33,6 +33,5 @@ G_DECLARE_FINAL_TYPE (MactestWindow, mactest_window, MACTEST, WINDOW, GtkApplica
 G_END_DECLS
 
 MactestWindow       *mactest_window_new          (MactestApplication *app);
-void                 mactest_window_open         (MactestWindow *win, GFile *file);
 void                 mactest_window_set_text     (MactestWindow *win, const char *text);
 

@@ -46,8 +46,9 @@ mactest_application_activate (GApplication *app)
 
 	GtkWindow *window = gtk_application_get_active_window (GTK_APPLICATION (app));
 
-	if (window == NULL)
+	if (window == NULL) {
 		window = GTK_WINDOW(mactest_window_new(MACTEST_APPLICATION(app)));
+	}
 
 	mactest_window_set_text(MACTEST_WINDOW(window), "I'm just activating");
 
@@ -55,10 +56,10 @@ mactest_application_activate (GApplication *app)
 }
 
 static void
-mactest_application_open (GApplication *app, GFile **files, gint n_files, const gchar *hint)
+mactest_application_open (GApplication *app, GFile **files, gint n_files, const gchar* )
 {
-        g_assert (MACTEST_IS_APPLICATION (app));
         g_message("on open");
+        g_assert (MACTEST_IS_APPLICATION (app));
         if (n_files != 1) {
             g_message("Can't open more than one file");
             return;
@@ -82,11 +83,11 @@ mactest_application_class_init (MactestApplicationClass *klass)
 	GApplicationClass *app_class = G_APPLICATION_CLASS (klass);
 
 	app_class->activate = mactest_application_activate;
-        app_class->open = mactest_application_open;
+    app_class->open = mactest_application_open;
 }
 
 
 static void
-mactest_application_init (MactestApplication *self)
+mactest_application_init (MactestApplication*)
 {
 }
